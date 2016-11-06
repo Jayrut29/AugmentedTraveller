@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="1" android:versionName="1.0"
+    package="com.example.agt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <permission android:name="com.example.agt.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.example.agt.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="19"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- Required to show current location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- Required OpenGL ES 2.0. for Maps V2 -->
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+
+    <application android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name"
+            android:name="com.example.agt.SplashScreen"
+            android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.example.agt.LoginActivity"/>
+        <activity  android:name="com.example.agt.CustomizedListView" android:screenOrientation="portrait"/>
+        <activity android:label="Places to Visit" android:name="com.example.agt.detailListView" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.agt.maptest" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name=".DashboardActivity"/>
+        <!-- Register Activity -->
+        <activity android:label="Register New Account"
+            android:name=".RegisterActivity" android:screenOrientation="portrait"/>
+       
+        <activity android:label="Place Details" android:name=".PlaceActivity" android:screenOrientation="portrait"/>
+         <activity android:label="Photos" android:name=".GridViewActivity" android:screenOrientation="portrait"/>
+         <activity android:name=".FullScreenViewActivity" android:screenOrientation="portrait" />
+       
+        <activity android:label="Bookmarks" android:name=".ShowAllBookmarksActivity" android:screenOrientation="portrait"/>
+       
+        <activity android:name=".AddReviewActivity"
+            android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name="com.example.agt.ReviewsActivity" android:screenOrientation="portrait"/>
+   
+        <activity android:label="AT Forums" android:name=".ForumActivity"/>
+
+        <activity android:label="Reply Here" android:name=".AnswersActivity"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAO819gstzBzv4CMNO1HyhXq3nplaXhCLQ"/>
+        <service android:label="service_name" android:name="MyService"/>
+    </application>
+</manifest>

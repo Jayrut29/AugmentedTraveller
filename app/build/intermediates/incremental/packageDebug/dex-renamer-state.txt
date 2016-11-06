@@ -1,0 +1,7 @@
+#Fri Nov 04 15:31:46 PDT 2016
+base.0=/Users/jayrutpatel/Documents/AGTT/AugmentedTraveller/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_9d699692adce9d2ddbfe07df546c5edacd4c2be2
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/jayrutpatel/Documents/AGTT/AugmentedTraveller/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_eb80d9834d10f7d98d9acd9ba74e24da6a9b60d4/classes.dex
+base.1=/Users/jayrutpatel/Documents/AGTT/AugmentedTraveller/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_eb80d9834d10f7d98d9acd9ba74e24da6a9b60d4
+file.0=/Users/jayrutpatel/Documents/AGTT/AugmentedTraveller/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_9d699692adce9d2ddbfe07df546c5edacd4c2be2/classes.dex

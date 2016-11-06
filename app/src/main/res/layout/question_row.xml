@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp" >
+
+    <TextView
+        android:id="@+id/qr_textiew_asked_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="asked by: Jayrut"
+        android:textColor="#348B48"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/qr_textiew_question"
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/qr_textiew_asked_by"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/qr_textiew_question"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_2" />
+
+</RelativeLayout>

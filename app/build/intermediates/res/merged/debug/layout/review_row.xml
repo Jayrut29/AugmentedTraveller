@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp" >
+
+    <TextView
+        android:id="@+id/rr_textiew_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="5 stars"
+        android:textColor="#348B48"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/rr_textview_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jayrut"
+        android:textColor="#348B48"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/rr_textview_review"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rr_textview_name"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/rr_textiew_rating"
+        android:text="the review goes here like this is written in java like that also"
+        android:textColor="#000000"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rr_textview_review"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_2" />
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/ar_textview_answer_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="abdul said"
+        android:textColor="#348B48" />
+
+    <TextView
+        android:id="@+id/ar_textview_answer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Jayrut said fsfse gthth ghsdgredg hjtjthfd sgsgsgdfv gergr"
+        android:textColor="#000000"
+        android:textSize="11sp" />
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <!-- ListRow Left sied Thumbnail image -->
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/image_bg"
+        android:padding="0dip" >
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="70dip"
+            
+            android:layout_height="70dip"
+            android:src="@drawable/home" />
+    </LinearLayout>
+
+    <!-- Place Name -->
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Laxmi Vilas Palace"
+        android:textColor="#040404"
+        android:textSize="18dip"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <!-- Category(INFO) Name -->
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rank"
+        android:layout_alignLeft="@+id/title"
+        android:layout_below="@id/title"
+        android:layout_marginTop="1dip"
+        android:text="Royal Vadodara..."
+        android:textColor="#343434"
+        android:textSize="13dip" />
+
+    <!-- Ratings -->
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/title"
+        android:layout_marginRight="5dip"
+        android:gravity="right"
+        android:text="5 Star"
+        android:textColor="#10bcc9"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <!-- Rightend Arrow -->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/arrow" />
+
+    <TextView
+        android:id="@+id/rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/thumbnail"
+        android:layout_alignLeft="@+id/subtitle"
+       
+        android:text="#2 in 25 places in Vadodara"
+        android:textSize="12sp"
+        />
+
+</RelativeLayout>
