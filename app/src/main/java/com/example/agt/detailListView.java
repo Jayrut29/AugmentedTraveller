@@ -128,15 +128,12 @@ public class detailListView extends Activity
 	{
 
 		pagerList = new ArrayList<Integer>();
-		pagerList.add(R.drawable.champ);
-		pagerList.add(R.drawable.hazira);
 		pagerList.add(R.drawable.home);
-		pagerList.add(R.drawable.enter);
-		pagerList.add(R.drawable.food);
-		pagerList.add(R.drawable.rej);
-		pagerList.add(R.drawable.sur);
-		pagerList.add(R.drawable.champa);
-		pagerList.add(R.drawable.bus);	
+		pagerList.add(R.drawable.go);
+		pagerList.add(R.drawable.sm);
+		pagerList.add(R.drawable.ush);
+		pagerList.add(R.drawable.hollywood);
+		pagerList.add(R.drawable.sm);
 		pager = (ViewPager) findViewById(R.id.pager_2);
 		pageAdapter = new ViewPagerAdapter(this, pagerList);
 		pager.setAdapter(pageAdapter);
